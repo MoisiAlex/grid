@@ -10,24 +10,22 @@ body{
 
 h1{
     text-align: center;
-  
-    text-transform: uppercase;
+    color:#CEAC40;
+    text-shadow: 5px 5px 6px rgba(0,0,0,0.3);
 }
 
-
-article{
-    align-self: flex-start;
-}
-
-article p{
-    margin-left:30%;
-    margin-bottom: 20px;
-}
+h1 span{  
+    font-size:2em;
+    padding-left:1rem;
+    padding-right:1rem;
+    font-family: 'Qwigley', cursive;}
 
 
 .container{
     border:2px solid #262626;
-    box-shadow: 0 0 10px #373767;
+    box-shadow: 0 0 10px #01010f;
+    margin:5rem;
+    background-color: #C61916;
 }
 
 .two-col{
@@ -35,6 +33,23 @@ article p{
     flex-direction: row;
     flex:1;
     justify-content: space-around;
+}
+
+.bottom-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 2%;
+}
+.bottom-btn button{
+    color:#fff;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    box-shadow: 2px 2px 5px black;
+}
+.leftBtn {
+    margin-right:auto;
 }
 
 .left{

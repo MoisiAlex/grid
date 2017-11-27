@@ -3,19 +3,20 @@
 <head>
     <meta charset="utf-8"/>
     <title>A Grid Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="Resources/style.css">
 </head>
 
 <body>
     <div class="container">
-        <article>
-        <h1>Sketchpad</h1>
-        <p> This is a sketchpad. Run your mouse over the white. It will remember.</p>
-          </article>  
+        
+        <h1>MAGIC<span>Etch A Sketch</span>SCREEN</h1>
+        
+          
     <div class ="two-col">
         <div class="left">
             <form>
-                <label for="color"> Choose a different color: </label>
+                <label for="color"> Color: </label>
                 <select id="color">
                     <option value="blue">Blue</option>
                     <option value="red">Red</option>
@@ -24,7 +25,7 @@
                     <option value="white">Eraser</option>
                 </select>
                 <br>
-                <label for="size">Chose a new size (around 200 is the max): </label>
+                <label for="size">New size (under 200): </label>
                 <input id="size" type="text" value="16"> <button type=button onclick="resizeGrid()"> Resize Me</button> 
                 <br>
                 <button type=button onclick="resizeGrid()"> Reset</button>
@@ -36,6 +37,10 @@
         
      </div>
     </div>
+        <div class="bottom-btn">
+            <button class="leftBtn">Left</button>
+            <button>Right</button>
+        </div>
     </div>
     
     

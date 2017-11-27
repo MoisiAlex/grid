@@ -30,12 +30,43 @@ function killGrid(){
     console.log("killed grid");
 }
 
+function showBorder(){
+    let box = document.querySelectorAll(".box"); 
+   console.log(box.item(0).style.border);
+    
+
+    if (box.item(0).style.border == "1px solid rgb(0, 0, 0)")
+        {
+    
+    box.forEach(div => div.style.border="5px solid #0d0df0");
+    console.log("show border");
+         console.log(box.item(0).style.border);
+        }
+    
+    else{
+     box.forEach(div => div.style.border="1px solid rgb(0, 0, 0)");
+    console.log("erase border"); 
+        
+         console.log(box.item(0).style.border);
+    }
+    
+   
+}
+
+function removeBorder(){
+    let box = document.querySelectorAll(".box"); 
+    box.forEach(div => div.style.border="1px solid #0d0df0");
+    console.log("erase border");
+}
+
 function resizeGrid(){
     console.log("about to resize grid")
      let size = document.querySelector("#size");
     console.log(size.value);
     killGrid();
     createGrid(parseInt(size.value)); 
+    showBorder();
+     
 }
 
 function setColorBoxes(){
