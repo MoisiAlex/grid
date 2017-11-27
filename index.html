@@ -11,35 +11,32 @@
     <div class="container">
         
         <h1>MAGIC<span>Etch A Sketch</span>SCREEN</h1>
-        
-          
-    <div class ="two-col">
-        <div class="left">
-            <form>
+              
+   
+        <div class= "scratchBox"> </div>
+   
+        <div class="bottom-col">
+            <button class="leftBtn" type=button onclick="setOpacity()"><p>Transparency: <span>off</span></p></button>
+           
+             <form>
                 <label for="color"> Color: </label>
                 <select id="color">
                     <option value="blue">Blue</option>
                     <option value="red">Red</option>
-                    <option value="yellow">Yellow</option>
+                    <option value="gold">Yellow</option>
+                    <option value="green">Green</option>
                     <option value="black">Black</option>
                     <option value="white">Eraser</option>
+                    <option value="random">Random</option>
                 </select>
                 <br>
                 <label for="size">New size (under 200): </label>
                 <input id="size" type="text" value="16"> <button type=button onclick="resizeGrid()"> Resize Me</button> 
                 <br>
-                <button type=button onclick="resizeGrid()"> Reset</button>
+               
             </form>
-        
-        </div>
-        <div class= "scratchBox">
-  
-        
-     </div>
-    </div>
-        <div class="bottom-btn">
-            <button class="leftBtn">Left</button>
-            <button>Right</button>
+            
+            <button type=button onclick="resizeGrid()"><p>Reset</p></button>
         </div>
     </div>
     

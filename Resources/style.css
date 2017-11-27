@@ -28,55 +28,56 @@ h1 span{
     background-color: #C61916;
 }
 
-.two-col{
-    display: flex;
-    flex-direction: row;
-    flex:1;
-    justify-content: space-around;
-}
 
-.bottom-btn{
+.bottom-col{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin: 2%;
 }
-.bottom-btn button{
+.bottom-col > button{
     color:#fff;
     border-radius: 50%;
     width:100px;
     height:100px;
     box-shadow: 2px 2px 5px black;
 }
+
+.bottom-col form{
+    align-self: center;
+    margin-right: auto;
+}
 .leftBtn {
     margin-right:auto;
 }
 
-.left{
-    width:25%;
-    display: flex;
+button p{
+    color:#000;
 }
 
-.left *{
-    margin-bottom: 10px;
-}
 .scratchBox{
     border:2px solid #262626;
     width:700px;
     height:700px;
     display:flex;
     flex-direction: column;
-    
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: white;
+}
+
+form *{
+    margin-bottom: 10px;
 }
 
 .row{
     display:flex;
     flex-direction:row;
     flex:1;
-   
-    
 }
 .box{
     flex:1;
     background-color: #fff;
 }
+
+
